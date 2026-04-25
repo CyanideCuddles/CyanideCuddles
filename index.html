@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        
+        <div id="ui-layer">
+            <div id="score-display">0</div>
+            
+            <div id="start-screen" class="screen">
+                <h1>NEON<br>BIRD</h1>
+                <p>Tap, Click or Space to flap</p>
+                <button id="start-btn">PLAY</button>
+            </div>
+            
+            <div id="game-over-screen" class="screen hidden">
+                <h2>GAME OVER</h2>
+                <div class="score-board">
+                    <div class="score-item">
+                        <span>SCORE</span>
+                        <span id="final-score">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span>BEST</span>
+                        <span id="best-score">0</span>
+                    </div>
+                </div>
+                <button id="restart-btn">RESTART</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
